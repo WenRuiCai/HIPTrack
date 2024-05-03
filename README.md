@@ -2,6 +2,15 @@
 
 Official implementation of [HIPTrack: Visual Tracking with Historical Prompts](https://arxiv.org/abs/2311.02072). (CVPR 2024)
 
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-historical-status-prompt-for/visual-object-tracking-on-lasot)](https://paperswithcode.com/sota/visual-object-tracking-on-lasot?p=learning-historical-status-prompt-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-historical-status-prompt-for/visual-object-tracking-on-got-10k)](https://paperswithcode.com/sota/visual-object-tracking-on-got-10k?p=learning-historical-status-prompt-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-historical-status-prompt-for/visual-object-tracking-on-trackingnet)](https://paperswithcode.com/sota/visual-object-tracking-on-trackingnet?p=learning-historical-status-prompt-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-historical-status-prompt-for/visual-object-tracking-on-lasot-ext)](https://paperswithcode.com/sota/visual-object-tracking-on-lasot-ext?p=learning-historical-status-prompt-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-historical-status-prompt-for/visual-object-tracking-on-uav123)](https://paperswithcode.com/sota/visual-object-tracking-on-uav123?p=learning-historical-status-prompt-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-historical-status-prompt-for/visual-object-tracking-on-otb-2015)](https://paperswithcode.com/sota/visual-object-tracking-on-otb-2015?p=learning-historical-status-prompt-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-historical-status-prompt-for/visual-object-tracking-on-needforspeed)](https://paperswithcode.com/sota/visual-object-tracking-on-needforspeed?p=learning-historical-status-prompt-for)
+
 ## Highlights
 
 #### 🌟Introduction
@@ -82,7 +91,7 @@ conda env create -f HIPTrack_env_cuda113.yaml
 Run the following command to set paths for this project
 
 ```bash
-python3 tracking/create_default_local_file.py --workspace_dir . --data_dir ./data --save_dir .
+python3 tracking/create_default_local_file.py --workspace_dir . --data_dir ./data --save_dir ./output
 ```
 
 After running this command, you can also modify paths by editing these two files
@@ -141,7 +150,7 @@ python3 lib/test/utils/transform_trackingnet.py --tracker_name hiptrack --cfg_na
 
 
 
-### Compute FLOPs/Params and test speed
+### Compute FLOPs/Params
 
 ```bash
 bash tracking/profile_hiptrack.sh
